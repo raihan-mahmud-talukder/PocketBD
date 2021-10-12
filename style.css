@@ -2,7 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2';
+    font-family: 'Lora', serif;
+}
+
+body {
+    background: #e9ffdb;
+}
+
+.social-media {
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 60px 5px 0px;
+    color: black;
 }
 
 header {
@@ -10,7 +21,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 80px;
     position: relative;
 }
 
@@ -19,12 +30,12 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
-    height: 80%;
+    height: 100%;
     right: 0;
     bottom: 0;
     padding: 0 !important;
     margin: 0 !important;
-    background: rgba(10, 10, 10, 0.3);
+    background: #addfad;
 }
 
 nav {
@@ -36,7 +47,12 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    padding: 50px 60px 0 60px;
+    padding: 20px 60px 0 60px;
+}
+
+nav h2 {
+    font-family: 'Akronim', cursive;
+    font-size: 35px;
 }
 
 nav li {
@@ -44,6 +60,7 @@ nav li {
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 nav li span {
@@ -51,9 +68,14 @@ nav li span {
 }
 
 li a {
-    padding: 5px;
-    background: #fff;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: white;
 }
 
 .cart ion-icon {
@@ -63,10 +85,10 @@ li a {
 }
 
 .cart a {
-    background: royalblue;
-    color: #fff;
+    color: black;
     cursor: pointer;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .container, .products-container {
@@ -78,14 +100,17 @@ li a {
 }
 
 .image {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 15px;
     position: relative;
     overflow: hidden;
+    border: 1px solid gree;
+    padding: 10px;
+    box-shadow: 2px 2px 5px green;
 }
 
 img {
     width: 350px;
+    height: 250px;
 }
 
 .container-detils {
@@ -93,7 +118,7 @@ img {
 }
 
 .details-image img {
-    width: 100%;
+    width: 25%;
 }
 
 .details {
@@ -102,9 +127,9 @@ img {
 
 .add-cart {
     position: absolute;
-    width: 100%;
-    background: darkgray;
-    transition: all 0.3s ease-in-out;
+    width: 94.75%;
+    background: #addfad;
+    transition: all 0s ease-in-out;
     opacity: 0;
     cursor: pointer;
     text-align: center;
@@ -114,8 +139,17 @@ img {
 .image:hover .cart2,
 .image:hover .cart3,
 .image:hover .cart4 {
-    bottom: 50px;
-    opacity: 1;
+    bottom: 67px;
+    opacity: 0.7;
     padding: 10px;
     text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    text-transform: uppercase;
+}
+
+.name, .price {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    background: #a8e4a0;
+    text-align: center;
 }
