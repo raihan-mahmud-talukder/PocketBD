@@ -12,8 +12,9 @@ body {
 .social-media {
     font-size: 30px;
     text-align: right;
-    padding: 10px 60px 5px 0px;
+    padding: 10px 0px 5px 0px;
     color: black;
+    display: none;
 }
 
 header {
@@ -28,18 +29,18 @@ header {
 .overlay {
     position: absolute;
     z-index: 1;
-    top: 0;
+    top:0;
     left: 0;
     height: 100%;
     right: 0;
     bottom: 0;
     padding: 0 !important;
     margin: 0 !important;
-    background: #addfad;
+    
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -47,11 +48,12 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    padding: 20px 60px 0 60px;
+    padding: 10px 60px 0 60px;
+    background: #addfad;
 }
 
 .navbar {
-    display: hidden;
+    display: none;
 }
 
 nav h2 {
@@ -63,7 +65,7 @@ nav li {
     list-style: none;
     display: inline-block;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-top: 10px;
 }
 
@@ -153,10 +155,65 @@ img {
 }
 
 .name {
-    font-family: 'Noto Sans Bengali', sans-serif;
-    
+    font-family: 'Noto Sans Bengali', sans-serif;  
 }
 
 .price {
 
+}
+
+@media (min-width: 650px) {
+
+    #footer1 {
+        background:#addfad;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    #footer2, #footer3 {
+        display: none;
+    }
+}
+
+@media (max-width: 649px) and (min-width: 480px) {
+    #footer2 {
+        background:#addfad;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    #footer1, #footer3 {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    #footer3 {
+        background:#addfad;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    #footer2, #footer1 {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    img {
+        width: 200px;
+        height: 150px;
+    }
 }
