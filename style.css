@@ -50,6 +50,10 @@ nav {
     padding: 20px 60px 0 60px;
 }
 
+.navbar {
+    display: hidden;
+}
+
 nav h2 {
     font-family: 'Akronim', cursive;
     font-size: 35px;
@@ -148,8 +152,11 @@ img {
     text-transform: uppercase;
 }
 
-.name, .price {
+.name {
     font-family: 'Noto Sans Bengali', sans-serif;
-    background: #a8e4a0;
-    text-align: center;
+    
+}
+
+.price {
+
 }
