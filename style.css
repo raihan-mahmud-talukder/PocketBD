@@ -87,7 +87,7 @@ li a:hover {
 .cart ion-icon {
     vertical-align: bottom;
     font-size: 20px;
-    padding-right: 5px;
+    padding-right: 0px;
 }
 
 .cart a {
@@ -169,10 +169,6 @@ img {
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: center;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 100%;
     }
     #footer2, #footer3 {
         display: none;
@@ -185,12 +181,8 @@ img {
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: center;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 100%;
     }
-    #footer1, #footer3 {
+    #footer1, #footer3, .order {
         display: none;
     }
 }
@@ -201,19 +193,37 @@ img {
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: center;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 100%;
     }
-    #footer2, #footer1 {
+    #footer2, #footer1, .order {
         display: none;
+    }
+    nav h2 {
+        font-size: 25px;
+    }
+    .call {
+        font-size: 16px;
+    }
+    nav li {
+        padding-top: 0px;
     }
 }
 
 @media (max-width: 400px) {
     img {
+        width: 250px;
+        height: 200px;
+    }
+    nav {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 315px) {
+    img {
         width: 200px;
         height: 150px;
+    }
+    .call-icon {
+        display: none;
     }
 }
