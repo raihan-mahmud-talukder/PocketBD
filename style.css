@@ -56,9 +56,11 @@ nav {
     display: none;
 }
 
-nav h2 {
+.title {
     font-family: 'Akronim', cursive;
     font-size: 35px;
+    text-decoration: none;
+    color: black;
 }
 
 nav li {
@@ -101,8 +103,8 @@ li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
-    padding-bottom: 100px;
+    margin-top: 10px;
+    padding-bottom: 30px;
 }
 
 .image {
@@ -124,9 +126,23 @@ img {
 }
 
 .details-image img {
-    width: 25%;
+    width: 700px;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.details-image h2 {
+    font-family: 'Noto Sans Bengali', sans-serif; 
+}
+
+.details-image a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background:  #addfad;;
+}
 .details {
     text-align: justify;    
 }
@@ -158,8 +174,10 @@ img {
     font-family: 'Noto Sans Bengali', sans-serif;  
 }
 
-.price {
-
+@media (max-width: 940px) {
+    .details-image img {
+        width: 100%;
+    }
 }
 
 @media (min-width: 650px) {
@@ -201,10 +219,16 @@ img {
         font-size: 25px;
     }
     .call {
-        font-size: 16px;
+        font-size: 20px;
     }
     nav li {
         padding-top: 0px;
+    }
+    .call-icon {
+        display: none;
+    }
+    .details-image img {
+        height: 300px;
     }
 }
 
