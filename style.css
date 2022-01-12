@@ -185,10 +185,16 @@ img {
 
 .social-media {
     font-size: 30px;
+    line-height: 20px;
+}
+
+.social-media a .fab {
+    font-size: 27px;
 }
 
 .social-media a {
-    color: darkgreen
+    color: darkgreen;
+    vertical-align: middle;
 }
 
 #copyright a {
